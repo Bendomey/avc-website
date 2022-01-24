@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Header() {
   return (
@@ -13,7 +14,7 @@ export function Header() {
           >
             <div className="navbar-container align-middle w-container">
               <div className="col lg-3 sm-6 no-margin-bottom order-first no-padding-left col-logo xs-12 md-grow">
-                <a href="index.html" className="brand on-dark w-nav-brand">
+                <a href="/" className="brand on-dark w-nav-brand">
                   <Image
                     src="/images/avc.png"
                     className="logoTop"
@@ -41,26 +42,29 @@ export function Header() {
                     </div>
                     <nav className="dropdown-list w-dropdown-list">
                       <a
-                        href="about.html"
+                        href="/about/our-story"
                         className="dropdown-link w-dropdown-link"
                       >
                         Our Story
                       </a>
                       <a
-                        href="our-team.html"
+                        href="/about/our-lawyers"
                         className="dropdown-link w-dropdown-link"
                       >
                         Lawyers
                       </a>
                       <a
-                        href="countries.html"
+                        href="/about/supported-countries"
                         className="dropdown-link w-dropdown-link"
                       >
                         Countries
                       </a>
                     </nav>
                   </div>
-                  <a href="legal.html" className="nav-link on-dark w-nav-link">
+                  <a
+                    href="/legal-areas"
+                    className="nav-link on-dark w-nav-link"
+                  >
                     Legal Areas
                   </a>
                   <div
@@ -75,13 +79,13 @@ export function Header() {
                     </div>
                     <nav className="dropdown-list w-dropdown-list ">
                       <a
-                        href="pricing.html"
+                        href="/pricing"
                         className="dropdown-link w-dropdown-link"
                       >
                         Basic Subscription
                       </a>
                       <a
-                        href="extra.html"
+                        href="/pricing/extra"
                         className="dropdown-link w-dropdown-link"
                       >
                         Extra Services
@@ -89,17 +93,17 @@ export function Header() {
                     </nav>
                   </div>
 
-                  <a href="blog.html" className="nav-link on-dark w-nav-link">
+                  <a href="/blog" className="nav-link on-dark w-nav-link">
                     Blog
                   </a>
-                  <a href="faq.html" className="nav-link on-dark w-nav-link">
+                  <a href="/faqs" className="nav-link on-dark w-nav-link">
                     FAQs
                   </a>
                 </nav>
               </div>
               <div className="col lg-1 no-margin-bottom flexh-justify-end no-padding-right hidden-xs test">
                 <a
-                  href="contact.html"
+                  href="https://app.africanventurecounsel.com/"
                   className="button-primary is-small order-last is-white w-inline-block"
                   style={{ border: "0px" }}
                 >

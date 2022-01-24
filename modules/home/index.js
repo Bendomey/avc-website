@@ -918,29 +918,6 @@ export function Home() {
         </div>
       </div>
 
-      <div
-        className="section no-padding-top-bottom "
-        style={{
-          backgroundImage: 'url("images/Header2.jpg")',
-        }}
-      >
-        <div className="is-wide footerOrange">
-          <div className="col lg-12 no-margin-bottom md-no-padding-left-right">
-            <div className="c-application__cta">
-              <div className="md-margin-bottom">
-                <div className="size-h2 on-dark">
-                  Didn’t find what you are looking for?
-                </div>
-              </div>
-              <div>
-                <a href="#" className="button-primary is-white w-inline-block">
-                  <div className="button-primary-text">Learn more</div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <Footer />
     </>
   );
