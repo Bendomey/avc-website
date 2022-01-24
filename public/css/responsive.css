@@ -1,0 +1,437 @@
+.style2 {
+  /* background-color: red; */
+  padding: 0 10px;
+}
+
+.logoTop{
+  width: 70%;
+}
+
+.logoBottom>img{
+    width: 60%;
+    height:auto;
+  }
+
+.footerDown{
+  display: none;
+  flex-direction: row;
+  align-items: center;
+}
+
+.streamlineImage{
+  margin-top:13vh
+}
+
+.imageOnlyOnSmallDevices{
+  display: none;
+}
+
+.svgBottom{
+  block:none;
+  width: 10%;
+  height: auto;
+}
+
+.button-primary.min-width-70{
+    padding:0px; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.slideToSee{
+  display: none;
+}
+
+.overall{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logosSize{
+    width:13%;
+  }
+
+  .footer-nav-link.w-inline-block{
+    display: inline-block;
+  }
+
+  .listMoveRight{
+    margin-right: 8vw;
+  }
+
+  /*for dropdown*/
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 130px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 7px 16px 7px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #AF330F;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  .dropdown-content{
+    left:110px;
+    top:70px;
+  }
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .dropdown-content{
+    left:120px;
+    top:70px;
+  }
+  
+}
+
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .style2 {
+    /* background-color: red; */
+    padding: 0 10px;
+  }
+
+  .almostFooter{
+    text-align: center;
+  }
+
+  .streamlineImage{
+    margin-top: 0vh
+  }
+
+  .imageOnlyOnSmallDevices{
+    display: block;
+  }
+
+  .pad-on-small-screen{
+    padding-left: 5vw
+  }
+
+  .button-primary.min-width-70{
+    height: 4vh;
+    padding:0px; 
+    /*width: 0px;*/
+  }
+
+  .overall{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .overall{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 170px;
+  }
+
+  .logosSize{
+    width: 30%;
+  }
+
+  .basis400{
+    margin-left: 150px
+  }
+
+  .imageOnlyOnSmallDevices{
+    display: none;
+  }
+
+  .imagesForList{
+    width:60px;
+  }
+
+  .listMoveRight{
+    /*margin-right: 5vw;*/
+    /*display: none;*/
+  }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .style2 {
+    /* background-color: red; */
+    padding: 0 10px;
+  }
+
+  .almostFooter{
+    text-align: center;
+  }
+
+  .streamlineImage{
+    margin-top: 0vh
+  }
+
+  .imageOnlyOnSmallDevices{
+    display: block;
+  }
+
+  .pad-on-small-screen{
+    padding-left: 5vw
+  }
+
+  .button-primary.min-width-70{
+    height: 7vh;
+    padding:0px; 
+    /*width: 0px;*/
+  }
+
+  .overall{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 170px;
+  }
+
+  .logosSize{
+    width: 30%;
+  }
+
+  .imageOnlyOnSmallDevices{
+    display: none;
+  }
+
+
+     
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .style2 {
+    /* background-color: red; */
+    padding: 0 10px;
+  }
+
+  .almostFooter{
+    text-align: center;
+  }
+
+  .streamlineImage{
+    margin-top: 0vh
+  }
+
+  .imageOnlyOnSmallDevices{
+    display: block;
+  }
+
+  .pad-on-small-screen{
+    padding-left: 10vw
+  }
+
+  .svgBottom{
+    width: 10%
+  }
+
+  .button-primary.min-width-70{
+    height: 7vh;
+    padding:0px; 
+    /*width: 0px;*/
+  }
+
+  .overall{
+    display: none;
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+  }
+
+  .logosSize{
+    width: 10%;
+  }
+
+  .imageOnlyOnSmallDevices{
+    display: none;
+  }
+
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .style2 {
+    /* background-color: red; */
+    padding: 0 10px;
+  }
+
+  .almostFooter{
+    text-align: center;
+  }
+
+  .logoTop{
+    width: 70%;
+  }
+
+  .nameAndEmail{
+    margin-top: 15px;
+  }
+
+  .streamlineImage{
+    margin-top: 0vh
+  }
+
+  .imageOnlyOnSmallDevices{
+    display: block;
+  }
+
+  .pad-on-small-screen{
+    padding-left: 10vw
+  }
+  
+  .button-primary.min-width-70.w-button{
+    /*height: 50vh;*/
+    padding:10px;
+    margin-left: 7vw;
+    width: 87%;
+  }
+  .form-input-text{
+    width: 90%;
+  }
+  .c-horizontal-form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .svgBottom{
+    width: 30%;
+  }
+
+  .companyLogos{
+    display: none;
+  }
+
+  .overall{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .logosSize{
+    width: 40%;
+  }
+
+  .c-iconbox1__icon{
+    width: 100px;
+  }
+
+  .firstOneBiggie{
+    width: 170px;
+  }
+
+  .slideToSee{
+    display: block;
+  }
+
+  .listMoveRight{
+    margin-right: 0vw;
+  }
+
+  table {
+    width: 300vw;
+  }
+
+  .dropdown-content{
+    width:100%;
+  }
+
+  .footerOrange{
+    text-align: center;
+  }
+
+  .legalFeesCenter{
+    text-align: center;
+  }
+
+  .legalFeesCenterBtn{
+    margin-left: 8vw;
+  }
+
+  .logoBottom>img{
+    /*display: none;*/
+    width: 15vw;
+    height:auto;
+  }
+}
