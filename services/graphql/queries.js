@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
 export const BLOG_POSTS = gql`
-  query {
-    posts {
+  query GetPosts($limit: Int) {
+    posts(pagination: { limit: $limit }) {
       id
       tag {
         id

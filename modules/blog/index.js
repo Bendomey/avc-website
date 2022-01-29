@@ -6,7 +6,7 @@ import { BLOG_POSTS } from "../../services/graphql/queries";
 import { PulseLoader } from "react-spinners";
 import { Fragment } from "react";
 
-const truncate = (data, { length }) => {
+export const truncate = (data, { length }) => {
   return data.length <= length ? data : data.substr(0, length) + "...";
 };
 
@@ -104,7 +104,7 @@ export function Blog() {
                                           {
                                             length: 25,
                                           }
-                                        ) || "Tag Name here"}
+                                        ) || "Selasi Adika"}
                                       </div>
                                     </div>
                                     <div className="text-small low-text-contrast">

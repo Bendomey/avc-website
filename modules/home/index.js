@@ -2,8 +2,18 @@ import { HeadComponent } from "../../components/head";
 import { Header } from "../../components/header";
 import Image from "next/image";
 import { Footer } from "../../components/footer";
+import { Counter } from "./counter";
+import { useQuery } from "@apollo/client";
+import { BLOG_POSTS } from "../../services/graphql/queries";
+import { PulseLoader } from "react-spinners";
+import { Fragment } from "react";
+import { truncate } from "../blog";
 
 export function Home() {
+  const { data, loading } = useQuery(BLOG_POSTS, {
+    variables: { length: 2 },
+  });
+
   return (
     <>
       <HeadComponent />
@@ -387,43 +397,7 @@ export function Home() {
             <h2 style={{ fontFamily: "Sofia Pro Semi" }}>
               A pioneer in business legal innovation in Africa
             </h2>
-            <div className="container container-nested margin-bottom">
-              <div id="counter" className="col lg-6 xs-12">
-                <div className="heading-beta is-xthin">
-                  <span data-count="22" className="counter-value">
-                    0
-                  </span>
-                  +<span className="font-size-normal"></span>
-                </div>
-                <div className="pre-title">African Countries</div>
-              </div>
-              <div className="col lg-6 xs-12">
-                <div className="heading-beta is-xthin">
-                  <span data-count="1200" className="counter-value">
-                    0
-                  </span>
-                  +<span className="font-size-normal"></span>
-                </div>
-                <div className="pre-title">
-                  Innovative Startups & Companies{" "}
-                </div>
-              </div>
-            </div>
-            <div className="container container-nested">
-              <div className="col lg-6 xs-12">
-                <div className="heading-beta is-xthin">
-                  <span data-count="100" className="counter-value">
-                    0
-                  </span>
-                  +<span className="font-size-normal"></span>
-                </div>
-                <div className="low-text-contrast pre-title">
-                  {" "}
-                  Experienced & accessible African Business Lawyers
-                </div>
-              </div>
-              <div className="col lg-6 xs-12"></div>
-            </div>
+            <Counter />
           </div>
         </div>
         <div className="decoration-leftside img1 hidden-md"></div>
@@ -642,201 +616,224 @@ export function Home() {
         </div>
       </div>
 
-      <div className="section">
-        <div className="container">
-          <div className="col block-centered text-align-center lg-5 md-12">
-            <h2
-              style={{ fontFamily: "Sofia Pro Semi" }}
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-            >
-              Latest news from our blog
-            </h2>
-          </div>
+      {loading ? (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "10vh",
+          }}
+        >
+          <PulseLoader color={"#ED3A0A"} />
         </div>
-        <div className="container is-wide">
-          <div className="col lg-12">
-            <div
-              data-animation="slide"
-              data-easing="ease-out-expo"
-              data-duration="900"
-              data-infinite="1"
-              className="c-blogslider w-slider"
-            >
-              <div className="w-slider-mask">
-                <div className="c-blogslider__slide w-slide">
-                  <div className="container">
-                    <div className="col lg-6 md-12">
-                      <div className="c-gridpost__card style4">
-                        <a
-                          href="#"
-                          className="c-gridpost__image-bg img1 w-inline-block"
-                        ></a>
-                        <div className="c-gridpost__category style4">
-                          <a href="#" className="c-gridpost__category-link">
-                            Africa Business
-                          </a>
+      ) : (
+        <>
+          {data?.postsLength > 0 ? (
+            <>
+              <div className="section">
+                <div className="container">
+                  <div className="col block-centered text-align-center lg-5 md-12">
+                    <h2
+                      style={{ fontFamily: "Sofia Pro Semi" }}
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="bottom-bottom"
+                    >
+                      Latest news from our blog
+                    </h2>
+                  </div>
+                </div>
+                <div className="container is-wide">
+                  <div className="col lg-12">
+                    <div
+                      data-animation="slide"
+                      data-easing="ease-out-expo"
+                      data-duration="900"
+                      data-infinite="1"
+                      className="c-blogslider w-slider"
+                    >
+                      <div className="w-slider-mask">
+                        <div className="c-blogslider__slide w-slide">
+                          <div className="container">
+                            {data?.posts?.map((post) => (
+                              <Fragment key={post.id}>
+                                <div className="col lg-6 md-12">
+                                  <div className="c-gridpost__card style4">
+                                    <a
+                                      href={`/blogs/${post.id}?tag=${post?.tag?.name}`}
+                                      style={{
+                                        backgroundImage: `url('${post?.image}')`,
+                                      }}
+                                      className="c-gridpost__image-bg img4 w-inline-block"
+                                    ></a>
+                                    <div className="c-gridpost__category style4">
+                                      <a
+                                        href="#"
+                                        className="c-gridpost__category-link"
+                                      >
+                                        {post?.tag?.name || "Tag Name here"}
+                                      </a>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      className="c-gridpost__clickable style4 w-inline-block"
+                                    >
+                                      <div className="c-w style2">
+                                        <h3
+                                          style={{
+                                            fontFamily: "Sofia Pro Semi",
+                                          }}
+                                        >
+                                          {truncate(`${post?.title}`, {
+                                            length: 55,
+                                          }) || "Tag Name here"}
+                                        </h3>
+                                        <div className="flexh-align-center flexh-space-between xs-is-wrapping">
+                                          <div className="flexh-align-center xs-margin-bottom nameAndEmail">
+                                            <img
+                                              src="https://via.placeholder.com/1000x600.png?text=IMAGE"
+                                              width="44"
+                                              alt=""
+                                              className="is-rounded margin-right-small"
+                                            />
+                                            <div className="text-small">
+                                              {truncate(
+                                                `${post?.createdBy?.fullname}`,
+                                                {
+                                                  length: 25,
+                                                }
+                                              ) || "Selasi Adika"}
+                                            </div>
+                                          </div>
+                                          <div className="text-small low-text-contrast">
+                                            {new Date(
+                                              post?.updatedAt
+                                            ).toDateString()}
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                              </Fragment>
+                            ))}
+                          </div>
                         </div>
-                        <a
-                          href="#"
-                          className="c-gridpost__clickable style4 w-inline-block"
-                        >
-                          <div className="c-w style2">
-                            <h3 style={{ fontFamily: "Sofia Pro Semi" }}>
-                              The Role Of A Franchisor
-                            </h3>
-                            <div className="flexh-align-center flexh-space-between xs-is-wrapping">
-                              <div className="flexh-align-center xs-margin-bottom nameAndEmail">
-                                <img
-                                  src="https://via.placeholder.com/1000x600.png?text=IMAGE"
-                                  width="44"
-                                  alt=""
-                                  className="is-rounded margin-right-small"
-                                />
-                                <div className="text-small">James Ouya</div>
+                        <div className="c-blogslider__slide w-slide">
+                          <div className="container is-wrapping">
+                            <div className="col lg-6 md-12">
+                              <div className="c-gridpost__card style4">
+                                <a
+                                  href="#"
+                                  className="c-gridpost__image-bg img3 w-inline-block"
+                                ></a>
+                                <div className="c-gridpost__category style4">
+                                  <a
+                                    href="#"
+                                    className="c-gridpost__category-link"
+                                  >
+                                    Ghana
+                                  </a>
+                                </div>
+                                <a
+                                  href="#"
+                                  className="c-gridpost__clickable style4 w-inline-block"
+                                >
+                                  <div className="c-w style2">
+                                    <h3
+                                      style={{ fontFamily: "Sofia Pro Semi" }}
+                                    >
+                                      Government Of Ghana Announces Startup Fund
+                                    </h3>
+                                    <div className="flexh-align-center flexh-space-between xs-is-wrapping">
+                                      <div className="flexh-align-center xs-margin-bottom nameAndEmail">
+                                        <img
+                                          src="https://via.placeholder.com/1000x600.png?text=IMAGE"
+                                          width="44"
+                                          alt=""
+                                          className="is-rounded margin-right-small"
+                                        />
+                                        <div className="text-small">
+                                          James Ouya
+                                        </div>
+                                      </div>
+                                      <div className="text-small low-text-contrast">
+                                        07 June 2020
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
                               </div>
-                              <div className="text-small low-text-contrast">
-                                07 June 2020
+                            </div>
+                            <div className="col lg-6 md-12">
+                              <div className="c-gridpost__card style4">
+                                <a
+                                  href="#"
+                                  className="c-gridpost__image-bg w-inline-block"
+                                ></a>
+                                <div className="c-gridpost__category style4">
+                                  <a
+                                    href="#"
+                                    className="c-gridpost__category-link"
+                                  >
+                                    Design
+                                  </a>{" "}
+                                  /{" "}
+                                  <a
+                                    href="#"
+                                    className="c-gridpost__category-link"
+                                  >
+                                    Technology
+                                  </a>
+                                </div>
+                                <a
+                                  href="#"
+                                  className="c-gridpost__clickable style4 w-inline-block"
+                                >
+                                  <div className="c-w style2">
+                                    <h3
+                                      style={{ fontFamily: "Sofia Pro Semi" }}
+                                    >
+                                      OpenAI’s Hide-and-Seek the Systems
+                                      Perspective
+                                    </h3>
+                                    <div className="flexh-align-center flexh-space-between xs-is-wrapping">
+                                      <div className="flexh-align-center xs-margin-bottom nameAndEmail">
+                                        <img
+                                          src="https://via.placeholder.com/1000x600.png?text=IMAGE"
+                                          width="44"
+                                          alt=""
+                                          className="is-rounded margin-right-small"
+                                        />
+                                        <div className="text-small">
+                                          James Ouya
+                                        </div>
+                                      </div>
+                                      <div className="text-small low-text-contrast">
+                                        07 June 2020
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
                               </div>
                             </div>
                           </div>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="col lg-6 md-12">
-                      <div className="c-gridpost__card style4">
-                        <a
-                          href="#"
-                          className="c-gridpost__image-bg img2 w-inline-block"
-                        ></a>
-                        <div className="c-gridpost__category style4">
-                          <a href="#" className="c-gridpost__category-link">
-                            Africa
-                          </a>
                         </div>
-                        <a
-                          href="#"
-                          className="c-gridpost__clickable style4 w-inline-block"
-                        >
-                          <div className="c-w style2">
-                            <h3 style={{ fontFamily: "Sofia Pro Semi" }}>
-                              Second African Investment Forum Ends
-                            </h3>
-                            <div className="flexh-align-center flexh-space-between xs-is-wrapping">
-                              <div className="flexh-align-center xs-margin-bottom nameAndEmail">
-                                <img
-                                  src="https://via.placeholder.com/1000x600.png?text=IMAGE"
-                                  width="44"
-                                  alt=""
-                                  className="is-rounded margin-right-small"
-                                />
-                                <div className="text-small">James Ouya</div>
-                              </div>
-                              <div className="text-small low-text-contrast">
-                                07 June 2020
-                              </div>
-                            </div>
-                          </div>
-                        </a>
                       </div>
+                      <div className="hidden w-slider-arrow-left">
+                        <div className="w-icon-slider-left"></div>
+                      </div>
+                      <div className="hidden w-slider-arrow-right">
+                        <div className="w-icon-slider-right"></div>
+                      </div>
+                      <div className="c-blogslider__nav w-slider-nav w-slider-nav-invert w-round"></div>
                     </div>
                   </div>
                 </div>
-                <div className="c-blogslider__slide w-slide">
-                  <div className="container is-wrapping">
-                    <div className="col lg-6 md-12">
-                      <div className="c-gridpost__card style4">
-                        <a
-                          href="#"
-                          className="c-gridpost__image-bg img3 w-inline-block"
-                        ></a>
-                        <div className="c-gridpost__category style4">
-                          <a href="#" className="c-gridpost__category-link">
-                            Ghana
-                          </a>
-                        </div>
-                        <a
-                          href="#"
-                          className="c-gridpost__clickable style4 w-inline-block"
-                        >
-                          <div className="c-w style2">
-                            <h3 style={{ fontFamily: "Sofia Pro Semi" }}>
-                              Government Of Ghana Announces Startup Fund
-                            </h3>
-                            <div className="flexh-align-center flexh-space-between xs-is-wrapping">
-                              <div className="flexh-align-center xs-margin-bottom nameAndEmail">
-                                <img
-                                  src="https://via.placeholder.com/1000x600.png?text=IMAGE"
-                                  width="44"
-                                  alt=""
-                                  className="is-rounded margin-right-small"
-                                />
-                                <div className="text-small">James Ouya</div>
-                              </div>
-                              <div className="text-small low-text-contrast">
-                                07 June 2020
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col lg-6 md-12">
-                      <div className="c-gridpost__card style4">
-                        <a
-                          href="#"
-                          className="c-gridpost__image-bg w-inline-block"
-                        ></a>
-                        <div className="c-gridpost__category style4">
-                          <a href="#" className="c-gridpost__category-link">
-                            Design
-                          </a>{" "}
-                          /{" "}
-                          <a href="#" className="c-gridpost__category-link">
-                            Technology
-                          </a>
-                        </div>
-                        <a
-                          href="#"
-                          className="c-gridpost__clickable style4 w-inline-block"
-                        >
-                          <div className="c-w style2">
-                            <h3 style={{ fontFamily: "Sofia Pro Semi" }}>
-                              OpenAI’s Hide-and-Seek the Systems Perspective
-                            </h3>
-                            <div className="flexh-align-center flexh-space-between xs-is-wrapping">
-                              <div className="flexh-align-center xs-margin-bottom nameAndEmail">
-                                <img
-                                  src="https://via.placeholder.com/1000x600.png?text=IMAGE"
-                                  width="44"
-                                  alt=""
-                                  className="is-rounded margin-right-small"
-                                />
-                                <div className="text-small">James Ouya</div>
-                              </div>
-                              <div className="text-small low-text-contrast">
-                                07 June 2020
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <div className="hidden w-slider-arrow-left">
-                <div className="w-icon-slider-left"></div>
-              </div>
-              <div className="hidden w-slider-arrow-right">
-                <div className="w-icon-slider-right"></div>
-              </div>
-              <div className="c-blogslider__nav w-slider-nav w-slider-nav-invert w-round"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </>
+          ) : null}
+        </>
+      )}
 
       <div
         className="section has-bg-accent position-relative"
