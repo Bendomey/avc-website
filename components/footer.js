@@ -91,13 +91,13 @@ export function Footer() {
                 >
                   Extra Links
                 </div>
-                <a href="about.html" className="footer-nav-link on-dark">
+                <a href="/about/our-story" className="footer-nav-link on-dark">
                   About Us
                 </a>
-                <a href="#" className="footer-nav-link on-dark">
+                <a href="/faqs" className="footer-nav-link on-dark">
                   FAQs
                 </a>
-                <a href="blog.html" className="footer-nav-link on-dark">
+                <a href="/blogs" className="footer-nav-link on-dark">
                   Blog
                 </a>
               </div>
