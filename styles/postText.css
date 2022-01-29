@@ -1,0 +1,6 @@
+.quillRichText > p {
+  margin-bottom: 5px;
+  font-weight: lighter;
+  color: #363434;
+  font-family: sans-serif;
+}

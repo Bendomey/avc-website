@@ -93,7 +93,7 @@ export function Header() {
                     </nav>
                   </div>
 
-                  <a href="/blog" className="nav-link on-dark w-nav-link">
+                  <a href="/blogs" className="nav-link on-dark w-nav-link">
                     Blog
                   </a>
                   <a href="/faqs" className="nav-link on-dark w-nav-link">

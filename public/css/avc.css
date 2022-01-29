@@ -1,4 +1,3 @@
-
 /*
 * TOC
 *
@@ -17,11 +16,13 @@
 > 1. Forms
 */
 
-h1,h2,h3,h4,h5{
-  font-family: 'Sofia Pro Semi';
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Sofia Pro Semi";
 }
-
-
 
 .w-form-formradioinput--inputType-custom {
   border-top-width: 1px;
@@ -66,7 +67,7 @@ h1,h2,h3,h4,h5{
 }
 
 .w-checkbox::before {
-  content: ' ';
+  content: " ";
   display: table;
   -ms-grid-column-span: 1;
   grid-column-end: 2;
@@ -79,7 +80,7 @@ h1,h2,h3,h4,h5{
 }
 
 .w-checkbox::after {
-  content: ' ';
+  content: " ";
   display: table;
   -ms-grid-column-span: 1;
   grid-column-end: 2;
@@ -128,7 +129,7 @@ h1,h2,h3,h4,h5{
   border-bottom-color: #3898ec;
   border-left-color: #3898ec;
   border-right-color: #3898ec;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -155,7 +156,7 @@ h1,h2,h3,h4,h5{
 */
 
 body {
-  font-family: 'Sofia Pro Semi', sans-serif;
+  font-family: "Sofia Pro Semi", sans-serif;
   color: #556575;
   font-size: 16px;
   line-height: 1.5;
@@ -651,7 +652,7 @@ figcaption {
 }
 
 .section.bg-dummy-image {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 0px 0px;
   background-size: auto;
 }
@@ -661,7 +662,7 @@ figcaption {
 }
 
 .section.bg-shade {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: auto;
 }
@@ -672,7 +673,7 @@ figcaption {
 
 .section.is-header.bg-accent.position-relative.bg-img {
   background-color: #0091ff;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 100% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -713,7 +714,7 @@ figcaption {
 }
 
 .section.is-hero.img1 {
-  background-image: url('../images/Header.jpg');
+  background-image: url("../images/Header.jpg");
   background-position: 50% -1px;
   background-size: cover;
 }
@@ -739,15 +740,33 @@ figcaption {
 }
 
 .section.is-hero.img1.on-dark.article-banner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url('https://via.placeholder.com/1000x600.png?text=IMAGE');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url("https://via.placeholder.com/1000x600.png?text=IMAGE");
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
 }
 
 .section.is-hero.bg-hero {
   min-height: 730px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#fff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#000),
+    to(#fff)
+  );
   background-image: linear-gradient(180deg, #000, #fff);
 }
 
@@ -760,7 +779,8 @@ figcaption {
 }
 
 .section.is-hero.position-relative.bg-hero2 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE'), linear-gradient(328deg, #f5af00, #ffcb4a);
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE"),
+    linear-gradient(328deg, #f5af00, #ffcb4a);
   background-position: 240% 0%, 0px 0px;
   background-size: 1380px, auto;
   background-repeat: no-repeat, repeat;
@@ -777,7 +797,8 @@ figcaption {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE'), linear-gradient(142deg, #b6dff7, #80c1ec);
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE"),
+    linear-gradient(142deg, #b6dff7, #80c1ec);
   background-position: 67% 50%, 0px 0px, 0px 0px;
   background-size: 680px, cover, auto;
   background-repeat: no-repeat, no-repeat, repeat;
@@ -794,12 +815,12 @@ figcaption {
   background-repeat: no-repeat;
 }
 
-.backgroundImage{
+.backgroundImage {
   display: flex;
   justify-content: center;
   align-items: center;
   /*height: 30vh;*/
-  background-image: linear-gradient(to bottom right,#ff3b05, #ff8205);
+  background-image: linear-gradient(to bottom right, #ff3b05, #ff8205);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -814,8 +835,10 @@ figcaption {
 }
 
 .section.bg-section {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE'), -webkit-gradient(linear, left top, left bottom, from(#b6dff7), to(#b6dff7));
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE'), linear-gradient(180deg, #b6dff7, #b6dff7);
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE"),
+    -webkit-gradient(linear, left top, left bottom, from(#b6dff7), to(#b6dff7));
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE"),
+    linear-gradient(180deg, #b6dff7, #b6dff7);
   background-position: 50vw 50%, 0px 0px;
   background-size: 980px, auto;
   background-repeat: no-repeat, repeat;
@@ -944,7 +967,7 @@ figcaption {
   /* border-radius: 40px; */
   border: 1px solid black;
   background-color: #fff;
-  font-family: 'Sofia Pro Semi', sans-serif;
+  font-family: "Sofia Pro Semi", sans-serif;
   color: black;
   font-size: 12px;
   font-weight: 500;
@@ -1278,7 +1301,7 @@ figcaption {
 }
 
 .fa {
-  font-family: 'Fa solid 900', sans-serif;
+  font-family: "Fa solid 900", sans-serif;
   font-size: 12px;
 }
 
@@ -1745,7 +1768,7 @@ figcaption {
   margin-left: 0px;
 }
 
-.footer-nav-link  {
+.footer-nav-link {
   display: block;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1825,7 +1848,7 @@ figcaption {
 }
 
 .fa-brand {
-  font-family: 'Fa brands 400', sans-serif;
+  font-family: "Fa brands 400", sans-serif;
   text-align: center;
 }
 
@@ -1852,7 +1875,7 @@ figcaption {
 
 .text-small.is-bold.trial-bg {
   padding-left: 24px;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 0% 2px;
   background-size: 16px;
   background-repeat: no-repeat;
@@ -2343,7 +2366,7 @@ figcaption {
 }
 
 .quote.style2 {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 24px;
   font-weight: 400;
 }
@@ -2353,7 +2376,9 @@ figcaption {
 }
 
 .quote.style3 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   color: #556575;
   font-weight: 400;
 }
@@ -2365,7 +2390,9 @@ figcaption {
 
 .quote.style5 {
   padding: 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   font-weight: 700;
 }
 
@@ -2386,7 +2413,9 @@ figcaption {
   z-index: 5;
   padding-right: 0px;
   padding-left: 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   font-weight: 600;
 }
 
@@ -2515,7 +2544,7 @@ figcaption {
 }
 
 .dummy-image1 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2629,7 +2658,7 @@ figcaption {
 }
 
 .fa-regular {
-  font-family: 'Fa 400', sans-serif;
+  font-family: "Fa 400", sans-serif;
   color: #fff;
   font-size: 18px;
 }
@@ -2743,63 +2772,63 @@ figcaption {
 }
 
 .c-carousel2__content.dummy1 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy2 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy3 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy4 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy5 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy6 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy7 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy8 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy9 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2974,7 +3003,7 @@ figcaption {
   z-index: -1;
   width: 50vw;
   height: 670px;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 0px 0px;
   background-size: auto;
 }
@@ -3180,7 +3209,7 @@ figcaption {
   padding-right: 40px;
   padding-left: 40px;
   border-left-style: none;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 100% 100%, 0% 0%;
   background-size: 32px, 32px;
   background-repeat: no-repeat, no-repeat;
@@ -3210,7 +3239,7 @@ figcaption {
 
 .c-checklist_item {
   padding-left: 32px;
-  background-image: url('../images/-asset-check.svg');
+  background-image: url("../images/-asset-check.svg");
   background-position: 0% 2px;
   background-size: 17px;
   background-repeat: no-repeat;
@@ -3286,7 +3315,7 @@ figcaption {
   bottom: 0%;
   width: 50vw;
   height: 100%;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 100% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3337,7 +3366,7 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('images/header2.jpg');
+  background-image: url("images/header2.jpg");
   background-position: 100% 50%;
   background-size: 200%;
 }
@@ -3349,11 +3378,11 @@ figcaption {
 }
 
 .c-cta1.on-dark {
-  background-image: url('images/header2.jpg');
+  background-image: url("images/header2.jpg");
 }
 
 .c-cta1.style2 {
-  background-image: url('images/header2.jpg');
+  background-image: url("images/header2.jpg");
 }
 
 .md-margin-bottom.cta-text {
@@ -3436,7 +3465,7 @@ figcaption {
 }
 
 .c-video__play-icon {
-  font-family: 'Fa solid 900', sans-serif;
+  font-family: "Fa solid 900", sans-serif;
   font-size: 80px;
 }
 
@@ -3498,7 +3527,6 @@ figcaption {
   border-bottom: 1px solid hsla(0, 0%, 60.7%, 0.3);
 }
 
-
 /*
 > 7. Class modifiers
 */
@@ -3556,7 +3584,7 @@ figcaption {
 
 .fullwidth-image-600 {
   height: 600px;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 0px 0px;
   background-size: 12px;
 }
@@ -3608,7 +3636,7 @@ figcaption {
 }
 
 .overflow-left.align-lg-2.height-100p.top-0.img-1 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 0px 0px;
   background-size: 6px;
 }
@@ -3616,14 +3644,14 @@ figcaption {
 .blockquote-wrapper {
   padding: 128px 100px;
   background-color: #0091ff;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .blockquote-wrapper.bg-blockquote {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -3638,7 +3666,7 @@ figcaption {
 }
 
 .fa-solid {
-  font-family: 'Fa solid 900', sans-serif;
+  font-family: "Fa solid 900", sans-serif;
 }
 
 .fa-solid._64px {
@@ -3701,7 +3729,7 @@ figcaption {
 }
 
 .fa-brand-2 {
-  font-family: 'Fa brands 400', sans-serif;
+  font-family: "Fa brands 400", sans-serif;
 }
 
 .fa-brand-2.w24 {
@@ -3727,7 +3755,7 @@ figcaption {
   bottom: -291px;
   width: 50vw;
   height: 1000px;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 110px 50%;
   background-size: 1000px;
   background-repeat: no-repeat;
@@ -3736,14 +3764,14 @@ figcaption {
 
 .decoration-rightside.bg2 {
   bottom: -170px;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 330px 50%;
 }
 
 .decoration-rightside.img-hero2 {
   bottom: -45px;
   height: 650px;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: -220px 50%;
 }
 
@@ -3754,7 +3782,7 @@ figcaption {
   width: 50vw;
   height: 1000px;
   margin-right: 700px;
-  background-image: url('../images/bigImage.jpg');
+  background-image: url("../images/bigImage.jpg");
   background-position: 50% 50%;
   background-size: 1000px;
   background-repeat: no-repeat;
@@ -3766,7 +3794,7 @@ figcaption {
   top: 0px;
   right: auto;
   height: 100%;
-  background-image: url('../images/bigImage.jpg');
+  background-image: url("../images/bigImage.jpg");
   background-position: 100% 50%;
   background-size: cover;
 }
@@ -3776,19 +3804,19 @@ figcaption {
   top: 0px;
   right: auto;
   height: 100%;
-  background-image: url('../images/video_image.jpg');
+  background-image: url("../images/video_image.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .decoration-leftside.hidden-md.img2 {
-  background-image: url('../images/video_image.jpg');
+  background-image: url("../images/video_image.jpg");
   background-size: cover;
 }
 
 .decoration-leftside.img-decor-1 {
   margin-right: 570px;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 100% 0%;
 }
 
@@ -3819,7 +3847,7 @@ figcaption {
 }
 
 .card.img1 {
-  background-image: url('../images/Header.jpg');
+  background-image: url("../images/Header.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -3931,7 +3959,7 @@ figcaption {
 }
 
 .c-gridpost__category-link {
-  font-family: 'Bolt', sans-serif;
+  font-family: "Bolt", sans-serif;
   color: #fff;
 }
 
@@ -3942,42 +3970,42 @@ figcaption {
   right: 0%;
   bottom: 0%;
   z-index: 0;
-  background-image: url('../images/franchise.jpg');
+  background-image: url("../images/franchise.jpg");
   /* background-position: 20% 20%; */
   background-size: cover;
   box-shadow: 0 20px 65px 0 rgba(0, 0, 0, 0.25);
 }
 
 .c-gridpost__image-bg.img2 {
-  background-image: url('../images/akuffo.jpg');
+  background-image: url("../images/akuffo.jpg");
 }
 
 .c-gridpost__image-bg.img3 {
-  background-image: url('../images/coins.jpg');
+  background-image: url("../images/coins.jpg");
 }
 
 .c-gridpost__image-bg.img4 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
 }
 
 .c-gridpost__image-bg.img5 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
 }
 
 .c-gridpost__image-bg.img6 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
 }
 
 .c-gridpost__image-bg.img7 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
 }
 
 .c-gridpost__image-bg.img8 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
 }
 
 .c-gridpost__image-bg.img9 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
 }
 
 .iconfont {
@@ -4026,7 +4054,7 @@ figcaption {
 }
 
 .iconfont.is-brand-color {
-  color: #B93D1B;
+  color: #b93d1b;
 }
 
 .iconfont.is-brand-color.is-24px {
@@ -4144,7 +4172,7 @@ figcaption {
   border-color: #ffe1d2;
   border-radius: 50%;
   background-color: #ed390b;
-  font-family: 'Fa solid 900', sans-serif;
+  font-family: "Fa solid 900", sans-serif;
   color: #fff;
   font-size: 30px;
   line-height: 1.5;
@@ -4500,11 +4528,17 @@ figcaption {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), to(#000));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(40%, transparent),
+    to(#000)
+  );
   background-image: linear-gradient(180deg, transparent 40%, #000);
   box-shadow: inset 0 0 0 0 #fff;
-  -webkit-transition: box-shadow 1000ms cubic-bezier(.215, .61, .355, 1);
-  transition: box-shadow 1000ms cubic-bezier(.215, .61, .355, 1);
+  -webkit-transition: box-shadow 1000ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: box-shadow 1000ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .c-gridgallery1__content:hover {
@@ -4535,7 +4569,7 @@ figcaption {
   top: 0%;
   right: 0%;
   bottom: 0%;
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4623,7 +4657,13 @@ figcaption {
   z-index: -1;
   width: 1000px;
   height: 1000px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0091ff), to(#115fdb));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#0091ff),
+    to(#115fdb)
+  );
   background-image: linear-gradient(180deg, #0091ff, #115fdb);
   opacity: 0.15;
 }
@@ -4878,15 +4918,27 @@ figcaption {
 .c-imageblock-link {
   width: 100%;
   padding: 128px 96px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('https://via.placeholder.com/1000x600.png?text=IMAGE');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("https://via.placeholder.com/1000x600.png?text=IMAGE");
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 0px 0px, 50% 22%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
 }
 
 .c-imageblock-link.img2 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE");
   background-position: 50% 40%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5042,7 +5094,7 @@ figcaption {
 }
 
 .quote-mark {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #d8ebf5;
 }
 
@@ -5344,7 +5396,8 @@ figcaption {
     padding-bottom: 0px;
   }
   .section.is-hero.hero-hosting {
-    background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE'), linear-gradient(142deg, #b6dff7, #80c1ec);
+    background-image: url("https://via.placeholder.com/1000x600.png?text=IMAGE"),
+      linear-gradient(142deg, #b6dff7, #80c1ec);
     background-position: 50% -30%, 0px 0px;
     background-size: 470px, auto;
     background-repeat: no-repeat, repeat;
@@ -5571,8 +5624,11 @@ figcaption {
   .c-grid1 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: minmax(0px, 1fr) minmax(255px, 1fr) minmax(255px, 1fr) minmax(255px, 1fr) minmax(255px, 1fr);
-    grid-template-rows: minmax(0px, 1fr) minmax(255px, 1fr) minmax(255px, 1fr) minmax(255px, 1fr) minmax(255px, 1fr);
+    -ms-grid-rows: minmax(0px, 1fr) minmax(255px, 1fr) minmax(255px, 1fr)
+      minmax(255px, 1fr) minmax(255px, 1fr);
+    grid-template-rows:
+      minmax(0px, 1fr) minmax(255px, 1fr) minmax(255px, 1fr) minmax(255px, 1fr)
+      minmax(255px, 1fr);
   }
   .c-grid2 {
     -ms-grid-columns: 1fr;
@@ -5875,8 +5931,20 @@ figcaption {
     padding-bottom: 96px;
   }
   .c-imageblock-link.img2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.78)), to(hsla(0, 0%, 100%, 0.78))), url('https://via.placeholder.com/1000x600.png?text=IMAGE');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.78), hsla(0, 0%, 100%, 0.78)), url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(hsla(0, 0%, 100%, 0.78)),
+        to(hsla(0, 0%, 100%, 0.78))
+      ),
+      url("https://via.placeholder.com/1000x600.png?text=IMAGE");
+    background-image: linear-gradient(
+        180deg,
+        hsla(0, 0%, 100%, 0.78),
+        hsla(0, 0%, 100%, 0.78)
+      ),
+      url("https://via.placeholder.com/1000x600.png?text=IMAGE");
     background-position: 0px 0px, 50% 40%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -7549,250 +7617,284 @@ figcaption {
 */
 
 @font-face {
-  font-family: 'Fa brands 400';
-  src: url('../fonts/fa-brands-400.woff2') format('woff2'), url('../fonts/fa-brands-400.eot') format('embedded-opentype'), url('../fonts/fa-brands-400.woff') format('woff'), url('../fonts/fa-brands-400.ttf') format('truetype'), url('../fonts/fa-brands-400.svg') format('svg');
+  font-family: "Fa brands 400";
+  src: url("../fonts/fa-brands-400.woff2") format("woff2"),
+    url("../fonts/fa-brands-400.eot") format("embedded-opentype"),
+    url("../fonts/fa-brands-400.woff") format("woff"),
+    url("../fonts/fa-brands-400.ttf") format("truetype"),
+    url("../fonts/fa-brands-400.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Fa 400';
-  src: url('../fonts/fa-regular-400.woff2') format('woff2'), url('../fonts/fa-regular-400.eot') format('embedded-opentype'), url('../fonts/fa-regular-400.woff') format('woff'), url('../fonts/fa-regular-400.ttf') format('truetype'), url('../fonts/fa-regular-400.svg') format('svg');
+  font-family: "Fa 400";
+  src: url("../fonts/fa-regular-400.woff2") format("woff2"),
+    url("../fonts/fa-regular-400.eot") format("embedded-opentype"),
+    url("../fonts/fa-regular-400.woff") format("woff"),
+    url("../fonts/fa-regular-400.ttf") format("truetype"),
+    url("../fonts/fa-regular-400.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Fa solid 900';
-  src: url('../fonts/fa-solid-900.woff2') format('woff2'), url('../fonts/fa-solid-900.eot') format('embedded-opentype'), url('../fonts/fa-solid-900.woff') format('woff'), url('../fonts/fa-solid-900.ttf') format('truetype'), url('../fonts/fa-solid-900.svg') format('svg');
+  font-family: "Fa solid 900";
+  src: url("../fonts/fa-solid-900.woff2") format("woff2"),
+    url("../fonts/fa-solid-900.eot") format("embedded-opentype"),
+    url("../fonts/fa-solid-900.woff") format("woff"),
+    url("../fonts/fa-solid-900.ttf") format("truetype"),
+    url("../fonts/fa-solid-900.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Fontello';
-  src: url('../fonts/fontello.woff2') format('woff2'), url('../fonts/fontello.eot') format('embedded-opentype'), url('../fonts/fontello.eot') format('embedded-opentype'), url('../fonts/fontello.woff') format('woff'), url('../fonts/fontello.ttf') format('truetype'), url('../fonts/fontello.svg') format('svg');
+  font-family: "Fontello";
+  src: url("../fonts/fontello.woff2") format("woff2"),
+    url("../fonts/fontello.eot") format("embedded-opentype"),
+    url("../fonts/fontello.eot") format("embedded-opentype"),
+    url("../fonts/fontello.woff") format("woff"),
+    url("../fonts/fontello.ttf") format("truetype"),
+    url("../fonts/fontello.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Icomoon';
-  src: url('../fonts/icomoon.eot') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg') format('svg');
+  font-family: "Icomoon";
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"),
+    url("../fonts/icomoon.woff") format("woff"),
+    url("../fonts/icomoon.ttf") format("truetype"),
+    url("../fonts/icomoon.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Asas';
-  src: url('../fonts/asas.eot') format('embedded-opentype'), url('../fonts/asas.woff') format('woff'), url('../fonts/asas.ttf') format('truetype'), url('../fonts/asas.svg') format('svg');
+  font-family: "Asas";
+  src: url("../fonts/asas.eot") format("embedded-opentype"),
+    url("../fonts/asas.woff") format("woff"),
+    url("../fonts/asas.ttf") format("truetype"),
+    url("../fonts/asas.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
-
 
 /* Generated by Fontie <http://fontie.pixelsvsbytes.com> */
 
 @font-face {
-    font-family:'Bolt';
-    src: url('../fonts/Bolt Regular.eot');
-  src: local('../fonts/Bolt-Regular'), local(Bolt Regular),
-    url('../fonts/Bolt Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Bolt Regular.woff2') format('woff2'),
-    url('../fonts/Bolt Regular.woff') format('woff'),
-    url('../fonts/Bolt Regular.ttf') format('truetype'),
-    url('../fonts/Bolt Regular.otf') format('opentype'),
-    url('../fonts/Bolt Regular.svg#Bolt Regular') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-007D;
+  font-family: "Bolt";
+  src: url("../fonts/Bolt Regular.eot");
+  src: local("../fonts/Bolt-Regular"), local(Bolt Regular),
+    url("../fonts/Bolt Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Bolt Regular.woff2") format("woff2"),
+    url("../fonts/Bolt Regular.woff") format("woff"),
+    url("../fonts/Bolt Regular.ttf") format("truetype"),
+    url("../fonts/Bolt Regular.otf") format("opentype"),
+    url("../fonts/Bolt Regular.svg#Bolt Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-007D;
 }
 
 @font-face {
-    font-family: 'Sofia Pro Semi';
-    src: url('fonts/font/SofiaProSemiBold.eot');
-    src: local('fonts/font/Sofia Pro Semi Bold'), local('SofiaProSemiBold'),
-        url('fonts/font/SofiaProSemiBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProSemiBold.woff2') format('woff2'),
-        url('fonts/font/SofiaProSemiBold.woff') format('woff'),
-        url('fonts/font/SofiaProSemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Sofia Pro Semi";
+  src: url("fonts/font/SofiaProSemiBold.eot");
+  src: local("fonts/font/Sofia Pro Semi Bold"), local("SofiaProSemiBold"),
+    url("fonts/font/SofiaProSemiBold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font/SofiaProSemiBold.woff2") format("woff2"),
+    url("fonts/font/SofiaProSemiBold.woff") format("woff"),
+    url("fonts/font/SofiaProSemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProRegular-Italic.eot');
-    src: local('fonts/font/Sofia Pro Regular Italic'), local('SofiaProRegular-Italic'),
-        url('fonts/font/SofiaProRegular-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProRegular-Italic.woff2') format('woff2'),
-        url('fonts/font/SofiaProRegular-Italic.woff') format('woff'),
-        url('fonts/font/SofiaProRegular-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProRegular-Italic.eot");
+  src: local("fonts/font/Sofia Pro Regular Italic"),
+    local("SofiaProRegular-Italic"),
+    url("fonts/font/SofiaProRegular-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/font/SofiaProRegular-Italic.woff2") format("woff2"),
+    url("fonts/font/SofiaProRegular-Italic.woff") format("woff"),
+    url("fonts/font/SofiaProRegular-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Sofia Pro Semi';
-    src: url('fonts/font/SofiaProSemiBold-Italic.eot');
-    src: local('fonts/font/Sofia Pro Semi Bold Italic'), local('SofiaProSemiBold-Italic'),
-        url('fonts/font/SofiaProSemiBold-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProSemiBold-Italic.woff2') format('woff2'),
-        url('fonts/font/SofiaProSemiBold-Italic.woff') format('woff'),
-        url('fonts/font/SofiaProSemiBold-Italic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
+  font-family: "Sofia Pro Semi";
+  src: url("fonts/font/SofiaProSemiBold-Italic.eot");
+  src: local("fonts/font/Sofia Pro Semi Bold Italic"),
+    local("SofiaProSemiBold-Italic"),
+    url("fonts/font/SofiaProSemiBold-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/font/SofiaProSemiBold-Italic.woff2") format("woff2"),
+    url("fonts/font/SofiaProSemiBold-Italic.woff") format("woff"),
+    url("fonts/font/SofiaProSemiBold-Italic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProLight.eot');
-    src: local('fonts/font/Sofia Pro Light'), local('SofiaProLight'),
-        url('fonts/font/SofiaProLight.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProLight.woff2') format('woff2'),
-        url('fonts/font/SofiaProLight.woff') format('woff'),
-        url('fonts/font/SofiaProLight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProLight.eot");
+  src: local("fonts/font/Sofia Pro Light"), local("SofiaProLight"),
+    url("fonts/font/SofiaProLight.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font/SofiaProLight.woff2") format("woff2"),
+    url("fonts/font/SofiaProLight.woff") format("woff"),
+    url("fonts/font/SofiaProLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProExtraLight.eot');
-    src: local('Sofia Pro ExtraLight'), local('SofiaProExtraLight'),
-        url('fonts/font/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProExtraLight.woff2') format('woff2'),
-        url('fonts/font/SofiaProExtraLight.woff') format('woff'),
-        url('fonts/font/SofiaProExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProExtraLight.eot");
+  src: local("Sofia Pro ExtraLight"), local("SofiaProExtraLight"),
+    url("fonts/font/SofiaProExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font/SofiaProExtraLight.woff2") format("woff2"),
+    url("fonts/font/SofiaProExtraLight.woff") format("woff"),
+    url("fonts/font/SofiaProExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProMedium-Italic.eot');
-    src: local('fonts/font/Sofia Pro Medium Italic'), local('SofiaProMedium-Italic'),
-        url('fonts/font/fonts/font/SofiaProMedium-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProMedium-Italic.woff2') format('woff2'),
-        url('fonts/font/SofiaProMedium-Italic.woff') format('woff'),
-        url('fonts/font/SofiaProMedium-Italic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProMedium-Italic.eot");
+  src: local("fonts/font/Sofia Pro Medium Italic"),
+    local("SofiaProMedium-Italic"),
+    url("fonts/font/fonts/font/SofiaProMedium-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/font/SofiaProMedium-Italic.woff2") format("woff2"),
+    url("fonts/font/SofiaProMedium-Italic.woff") format("woff"),
+    url("fonts/font/SofiaProMedium-Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProUltraLight-Italic.eot');
-    src: local('fonts/font/Sofia Pro UltraLight Italic'), local('SofiaProUltraLight-Italic'),
-        url('fonts/font/SofiaProUltraLight-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProUltraLight-Italic.woff2') format('woff2'),
-        url('fonts/font/SofiaProUltraLight-Italic.woff') format('woff'),
-        url('fonts/font/SofiaProUltraLight-Italic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProUltraLight-Italic.eot");
+  src: local("fonts/font/Sofia Pro UltraLight Italic"),
+    local("SofiaProUltraLight-Italic"),
+    url("fonts/font/SofiaProUltraLight-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/font/SofiaProUltraLight-Italic.woff2") format("woff2"),
+    url("fonts/font/SofiaProUltraLight-Italic.woff") format("woff"),
+    url("fonts/font/SofiaProUltraLight-Italic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProRegular.eot');
-    src: local('fonts/font/Sofia Pro Regular'), local('SofiaProRegular'),
-        url('fonts/font/SofiaProRegular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProRegular.woff2') format('woff2'),
-        url('fonts/font/SofiaProRegular.woff') format('woff'),
-        url('fonts/font/SofiaProRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProRegular.eot");
+  src: local("fonts/font/Sofia Pro Regular"), local("SofiaProRegular"),
+    url("fonts/font/SofiaProRegular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font/SofiaProRegular.woff2") format("woff2"),
+    url("fonts/font/SofiaProRegular.woff") format("woff"),
+    url("fonts/font/SofiaProRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProMedium.eot');
-    src: local('fonts/font/Sofia Pro Medium'), local('SofiaProMedium'),
-        url('fonts/font/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProMedium.woff2') format('woff2'),
-        url('fonts/font/SofiaProMedium.woff') format('woff'),
-        url('fonts/font/SofiaProMedium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProMedium.eot");
+  src: local("fonts/font/Sofia Pro Medium"), local("SofiaProMedium"),
+    url("fonts/font/SofiaProMedium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font/SofiaProMedium.woff2") format("woff2"),
+    url("fonts/font/SofiaProMedium.woff") format("woff"),
+    url("fonts/font/SofiaProMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProBold.eot');
-    src: local('fonts/font/Sofia Pro Bold'), local('SofiaProBold'),
-        url('fonts/font/SofiaProBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProBold.woff2') format('woff2'),
-        url('fonts/font/SofiaProBold.woff') format('woff'),
-        url('fonts/font/SofiaProBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProBold.eot");
+  src: local("fonts/font/Sofia Pro Bold"), local("SofiaProBold"),
+    url("fonts/font/SofiaProBold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font/SofiaProBold.woff2") format("woff2"),
+    url("fonts/font/SofiaProBold.woff") format("woff"),
+    url("fonts/font/SofiaProBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProExtraLight-Italic.eot');
-    src: local('fonts/font/Sofia Pro ExtraLight Italic'), local('SofiaProExtraLight-Italic'),
-        url('fonts/font/SofiaProExtraLight-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProExtraLight-Italic.woff2') format('woff2'),
-        url('fonts/font/SofiaProExtraLight-Italic.woff') format('woff'),
-        url('fonts/font/SofiaProExtraLight-Italic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProExtraLight-Italic.eot");
+  src: local("fonts/font/Sofia Pro ExtraLight Italic"),
+    local("SofiaProExtraLight-Italic"),
+    url("fonts/font/SofiaProExtraLight-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/font/SofiaProExtraLight-Italic.woff2") format("woff2"),
+    url("fonts/font/SofiaProExtraLight-Italic.woff") format("woff"),
+    url("fonts/font/SofiaProExtraLight-Italic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProLight-Italic.eot');
-    src: local('fonts/font/Sfonts/font/ofia Pro Light Italic'), local('SofiaProLight-Italic'),
-        url('fonts/font/SofiaProLight-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProLight-Italic.woff2') format('woff2'),
-        url('fonts/font/SofiaProLight-Italic.woff') format('woff'),
-        url('fonts/font/SofiaProLight-Italic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProLight-Italic.eot");
+  src: local("fonts/font/Sfonts/font/ofia Pro Light Italic"),
+    local("SofiaProLight-Italic"),
+    url("fonts/font/SofiaProLight-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/font/SofiaProLight-Italic.woff2") format("woff2"),
+    url("fonts/font/SofiaProLight-Italic.woff") format("woff"),
+    url("fonts/font/SofiaProLight-Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProBlack-Italic.eot');
-    src: local('fonts/font/Sofia Pro Black Italic'), local('SofiaProBlack-Italic'),
-        url('fonts/font/SofiaProBlack-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProBlack-Italic.woff2') format('woff2'),
-        url('fonts/font/SofiaProBlack-Italic.woff') format('woff'),
-        url('fonts/font/SofiaProBlack-Italic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProBlack-Italic.eot");
+  src: local("fonts/font/Sofia Pro Black Italic"), local("SofiaProBlack-Italic"),
+    url("fonts/font/SofiaProBlack-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/font/SofiaProBlack-Italic.woff2") format("woff2"),
+    url("fonts/font/SofiaProBlack-Italic.woff") format("woff"),
+    url("fonts/font/SofiaProBlack-Italic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProBlack.eot');
-    src: local('fonts/font/Sofia Pro Black'), local('SofiaProBlack'),
-        url('fonts/font/SofiaProBlack.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProBlack.woff2') format('woff2'),
-        url('fonts/font/SofiaProBlack.woff') format('woff'),
-        url('fonts/font/SofiaProBlack.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProBlack.eot");
+  src: local("fonts/font/Sofia Pro Black"), local("SofiaProBlack"),
+    url("fonts/font/SofiaProBlack.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font/SofiaProBlack.woff2") format("woff2"),
+    url("fonts/font/SofiaProBlack.woff") format("woff"),
+    url("fonts/font/SofiaProBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProUltraLight.eot');
-    src: local('fonts/font/Sofia Pro UltraLight'), local('SofiaProUltraLight'),
-        url('SofiaProUltraLight.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProUltraLight.woff2') format('woff2'),
-        url('fonts/font/SofiaProUltraLight.woff') format('woff'),
-        url('fonts/font/SofiaProUltraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProUltraLight.eot");
+  src: local("fonts/font/Sofia Pro UltraLight"), local("SofiaProUltraLight"),
+    url("SofiaProUltraLight.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font/SofiaProUltraLight.woff2") format("woff2"),
+    url("fonts/font/SofiaProUltraLight.woff") format("woff"),
+    url("fonts/font/SofiaProUltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/font/SofiaProBold-Italic.eot');
-    src: local('fonts/font/Sofia Pro Bold Italic'), local('SofiaProBold-Italic'),
-        url('fonts/font/SofiaProBold-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/font/SofiaProBold-Italic.woff2') format('woff2'),
-        url('fonts/font/SofiaProBold-Italic.woff') format('woff'),
-        url('fonts/font/SofiaProBold-Italic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+  font-family: "Sofia Pro";
+  src: url("fonts/font/SofiaProBold-Italic.eot");
+  src: local("fonts/font/Sofia Pro Bold Italic"), local("SofiaProBold-Italic"),
+    url("fonts/font/SofiaProBold-Italic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font/SofiaProBold-Italic.woff2") format("woff2"),
+    url("fonts/font/SofiaProBold-Italic.woff") format("woff"),
+    url("fonts/font/SofiaProBold-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }
-
