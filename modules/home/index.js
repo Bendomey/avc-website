@@ -123,7 +123,7 @@ export function Home() {
             <div
               className="margin-bottom-double"
               style={{
-                fontFamily: "Ubuntu sans-serif",
+                fontFamily: "Ubuntu, sans-serif",
                 color: "#586168",
               }}
             >
@@ -166,7 +166,7 @@ export function Home() {
                     <div
                       className="margin-bottom"
                       style={{
-                        fontFamily: "Ubuntu sans-serif",
+                        fontFamily: "Ubuntu, sans-serif",
                         color: "#586168",
                       }}
                     >
@@ -654,7 +654,10 @@ export function Home() {
                       <div className="w-slider-mask">
                         <div className="c-blogslider__slide w-slide">
                           <div className="container">
-                            {data?.posts?.map((post) => (
+                            {(data?.posts?.length < 2
+                              ? data?.posts
+                              : data?.posts?.slice(0, 2)
+                            )?.map((post) => (
                               <Fragment key={post.id}>
                                 <div className="col lg-6 md-12">
                                   <div className="c-gridpost__card style4">

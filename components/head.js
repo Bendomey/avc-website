@@ -14,7 +14,7 @@ export function HeadComponent() {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
 
         <title>
           AVC — A modern legal solution for doing business in africa

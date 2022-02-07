@@ -1,6 +1,13 @@
 .quillRichText > p {
   margin-bottom: 5px;
-  font-weight: lighter;
+  /* font-weight: lighter; */
   color: #363434;
-  font-family: sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.quillRichText > p > strong {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #363434;
+  font-family: "Sofia Pro";
 }

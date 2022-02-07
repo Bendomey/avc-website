@@ -37,7 +37,7 @@ export function Post() {
             position: "absolute",
             top: 0,
             backgroundColor: "rgba(0,0,0,0.7)",
-            height: "85vh",
+            height: "100%",
             width: "100vw",
             display: "flex",
             justifyContent: "center",
