@@ -81,7 +81,7 @@ export function Blog() {
                                 </a>
                               </div>
                               <a
-                                href="#"
+                                href={`/blogs/${post.id}?tag=${post?.tag?.name}`}
                                 className="c-gridpost__clickable style4 w-inline-block"
                               >
                                 <div className="c-gridpost__text style2">
