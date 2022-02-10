@@ -692,12 +692,12 @@ export function Home() {
                                         </h3>
                                         <div className="flexh-align-center flexh-space-between xs-is-wrapping">
                                           <div className="flexh-align-center xs-margin-bottom nameAndEmail">
-                                            <img
+                                            {/* <img
                                               src="https://via.placeholder.com/1000x600.png?text=IMAGE"
                                               width="44"
                                               alt=""
                                               className="is-rounded margin-right-small"
-                                            />
+                                            /> */}
                                             <div className="text-small">
                                               {truncate(
                                                 `${post?.createdBy?.fullname}`,
