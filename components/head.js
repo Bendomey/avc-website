@@ -29,6 +29,7 @@ export function HeadComponent() {
           rel="stylesheet"
           type="text/css"
         />
+        <link href="/fonts/fa-brands-400.woff" />
         <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
         <link href="/css/components.css" rel="stylesheet" type="text/css" />
         <link href="/css/responsive.css" rel="stylesheet" type="text/css" />
