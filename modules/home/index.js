@@ -34,7 +34,7 @@ export function Home() {
               data-aos="fade-right"
               data-aos-anchor-placement="bottom-bottom"
             >
-              A Modern Legal Solution For African Businesses
+              A Modern African Law Company
             </h1>
             <br />
 

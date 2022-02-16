@@ -39,7 +39,7 @@ export function Footer() {
                 >
                   Office
                 </div>
-                <div>19 Kofi Annan Street, Airport, Accra, Ghana</div>
+                <div>2 Tunemete Street Dzorwulu, Accra</div>
               </div>
               <div className="col lg-4 md-12 no-margin-bottom">
                 <div
@@ -49,8 +49,8 @@ export function Footer() {
                   Let&#x27;s talk
                 </div>
                 <div>
-                  <a href="tel:+23356143 0128" className="phone-footer">
-                    +233 56 143 0128
+                  <a href="tel:+233549317343" className="phone-footer">
+                    +233 54 931 7343
                   </a>
                 </div>
                 <a
