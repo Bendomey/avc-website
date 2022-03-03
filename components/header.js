@@ -1,7 +1,12 @@
+import * as React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { useOutsideAlerter } from "../components/useOutsideAlerter";
 
 export function Header() {
+  const menuRef = React.useRef(null);
+  const [showMenu, setShowMenu] = React.useState(false);
+  useOutsideAlerter(menuRef, () => setShowMenu(false));
+
   return (
     <>
       <header className="section-header position-absolute">
@@ -111,10 +116,40 @@ export function Header() {
                 </a>
               </div>
               <div className="menu-button w-nav-button">
-                <div className="iconfont is-16px on-dark">
+                <div
+                  onClick={() => setShowMenu((prev) => !prev)}
+                  className="iconfont is-16px on-dark"
+                >
                   <em className="iconfont__no-italize"></em>
                 </div>
               </div>
+            </div>
+            <div ref={menuRef} className="menuSmallScreen" style={{}}>
+              {showMenu ? (
+                <>
+                  {[
+                    { label: "Home", value: "/" },
+                    { label: "About Us", value: "/about/our-story" },
+                    { label: "Legal Areas", value: "/legal-areas" },
+                    { label: "Pricing", value: "/pricing" },
+                    { label: "Blog", value: "/blogs" },
+                    { label: "FAQs", value: "/faqs" },
+                  ].map((menu, i) => (
+                    <React.Fragment key={i}>
+                      <a
+                        href={menu.value}
+                        style={{
+                          padding: 10,
+                          color: "#ED3A0A",
+                          border: "1px solid #f7f7f7",
+                        }}
+                      >
+                        {menu.label}
+                      </a>
+                    </React.Fragment>
+                  ))}
+                </>
+              ) : null}
             </div>
           </div>
         </div>
